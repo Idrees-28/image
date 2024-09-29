@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Image Scrolling</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .scroll-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #111;
+      padding: 20px 0;
+    }
+
+    .scroll-content {
+      display: flex;
+      animation: scroll 40s linear infinite;
+    }
+
+    .scroll-content img {
+      border-radius: 15px;
+      margin: 0 15px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-1500px); /* Adjusted for 15 images */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-container">
+    <div class="scroll-content">
+      <img src="./img1.jpeg" alt="Image 1">
+      <img src="./img2.jpeg" alt="Image 2">
+      <img src="./img3.jpeg" alt="Image 3">
+      <img src="./img4.jpeg" alt="Image 4">
+      <img src="./img5.jpeg" alt="Image 5">
+      <img src="./img6.jpeg" alt="Image 6">
+      <img src="./img7.jpeg" alt="Image 7">
+      <img src="./img8.jpeg" alt="Image 8">
+      <img src="./img9.jpeg" alt="Image 9">
+      <img src="./img10.jpeg" alt="Image 10">
+      <img src="./img11.jpeg" alt="Image 11">
+      <img src="./img12.jpeg" alt="Image 12">
+      <img src="./img13.jpeg" alt="Image 13">
+      <img src="./img14.jpeg" alt="Image 14">
+      <img src="./img15.jpeg" alt="Image 15">
+    </div>
+  </div>
+
+</body>
+</html>
